@@ -10,7 +10,7 @@ function paintBackground(imgNum) {
 }
 
 function generateRandomNum() {
-  const number = Math.floor(Math.random() * totalImgNumber);
+  const number = Math.floor(Math.random() * totalImgNumber + 1);
   return number;
 }
 

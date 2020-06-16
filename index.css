@@ -1,3 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+
 /* greeting 메세지를 위한 css */
 .showing-off {
   display: none;
@@ -9,11 +32,15 @@
 
 /*  한글 시계 시각 표시를 위한 css */
 .clockTxt {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .text-brighter {
   opacity: 1;
+}
+
+.clockHalfDay {
+  color: #ffd700;
 }
 
 /* 배경화면 이미지를 위한 css */
