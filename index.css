@@ -1,3 +1,7 @@
+/* Fonts import */
+
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Myeongjo:wght@800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +31,8 @@ body {
 .greeting-container {
   padding-left: 40px;
   padding-right: 40px;
-  font-size: 20px;
+  font-family: "Jua", sans-serif;
+  font-size: 30px;
   width: 80%;
   display: flex;
   justify-content: center;
@@ -61,6 +66,9 @@ body {
 
 .clockTable {
   border-spacing: 10px;
+  border-radius: 30px;
+  backdrop-filter: blur(2px);
+  font-family: "Nanum Myeongjo", serif;
 }
 
 /* greeting 메세지를 위한 css */
@@ -74,7 +82,7 @@ body {
 
 /*  한글 시계 시각 표시를 위한 css */
 .clockTxt {
-  opacity: 0.4;
+  opacity: 0.2;
   text-align: center;
   font-size: 30px;
 }
