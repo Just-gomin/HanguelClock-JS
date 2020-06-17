@@ -52,8 +52,18 @@ function loadName() {
   }
 }
 
+function inputFocus(event) {
+  input.placeholder = "";
+}
+
+function inputFocusout(event) {
+  input.placeholder = "이름이 어떻게 되요? 성은 빼고 적어주세요 =)";
+}
+
 function init() {
   loadName();
+  input.addEventListener("click", inputFocus);
+  input.addEventListener("blur", inputFocusout);
 }
 
 init();

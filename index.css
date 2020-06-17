@@ -31,11 +31,11 @@ body {
   width: 80%;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 .js-form {
-  width: 100%;
+  width: 370px;
   height: 100%;
 }
 
