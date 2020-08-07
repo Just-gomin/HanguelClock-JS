@@ -16,7 +16,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: #282c34;
   color: white;
   display: flex;
   flex-direction: column;
@@ -33,14 +33,16 @@ header {
 }
 
 .button {
-  border: none;
+  all: unset;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: black;
   font-size: 20px;
   font-family: "Nanum Pen Script", cursive;
   padding: 2px;
   margin-top: 5px;
   margin-right: 5px;
-  border-radius: 30px;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .button:focus {
@@ -123,7 +125,7 @@ header {
 .clockTxt {
   opacity: 0.2;
   text-align: center;
-  font-size: 30px;
+  font-size: 45px;
 }
 
 .text-brighter {
