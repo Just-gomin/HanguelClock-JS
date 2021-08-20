@@ -32,7 +32,8 @@
 
   | 사용 영역        |       사용 색깔        |         출처         |                                 URL                                  |
   | :--------------- | :--------------------: | :------------------: | :------------------------------------------------------------------: |
-  | 뒷 배경          |        #415A80         | Instagram(awsmcolor) | https://www.instagram.com/p/CL4Lu9vBZaT/?utm_source=ig_web_copy_link |
+  | 뒷 배경          |        #131c3d         |          -           |                                  -                                   |
+  | 뒷 배경          |        #4f3267         | Instagram(awsmcolor) | https://www.instagram.com/p/CNDH5mFhSAA/?utm_source=ig_web_copy_link |
   | 오전, 오후 Text  |        #A5D4DC         | Instagram(awsmcolor) | https://www.instagram.com/p/CL4Lu9vBZaT/?utm_source=ig_web_copy_link |
   | 표시된 시각 한글 |  #FFFFFF(Opacity : 1)  |          -           |                                  -                                   |
   | 꺼진 시각 한글   | #FFFFFF(Opacity : 0.2) |          -           |                                  -                                   |
