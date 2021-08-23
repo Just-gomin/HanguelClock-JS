@@ -1,0 +1,34 @@
+/* header 세팅 */
+header {
+  display: inline-block;
+}
+
+.js-header {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.button {
+  all: unset;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: black;
+  font-size: 20px;
+  font-family: "Nanum Pen Script", cursive;
+  padding: 2px;
+  margin-top: 5px;
+  margin-right: 5px;
+  opacity: 0.2;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  transform: translateY(2px);
+}

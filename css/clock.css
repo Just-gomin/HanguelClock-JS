@@ -1,0 +1,27 @@
+/*  한글 시계 시각 표시 */
+.js-clock-container {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.clockTable {
+  padding: 20px;
+  border-spacing: 10px;
+  border-radius: 30px;
+  backdrop-filter: blur(2px);
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.clockTxt {
+  padding: 5px;
+  opacity: 0.2;
+  text-align: center;
+  font-size: 45px;
+}
+
+.text-brighter {
+  opacity: 1;
+}
+
+.clockHalfDay {
+  color: #a5d4dc;
+}

@@ -1,0 +1,46 @@
+/* greeting 메세지를 위한 css */
+/* .greeting-container {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: "Jua", sans-serif;
+  font-size: 28px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.js-form {
+  width: 370px;
+  height: 100%;
+}
+
+.greeting-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-bottom: 1px solid white;
+  background: none;
+  text-align: center;
+  color: white;
+  font-family: "Jua", sans-serif;
+  font-size: 20px;
+}
+
+.greeting-input::placeholder {
+  color: white;
+  font-family: "Jua", sans-serif;
+  font-size: 20px;
+}
+
+.greeting-input:focus {
+  outline: none;
+}
+
+.showing-off {
+  display: none;
+}
+
+.showing-on {
+  display: block;
+} */
