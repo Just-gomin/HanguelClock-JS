@@ -1,6 +1,6 @@
-const form = document.querySelector(".js-form"),
-  input = form.querySelector("input"),
-  greeting = document.querySelector(".js-greeting");
+const form = document.querySelector(".greeting__form"),
+  input = form.querySelector(".greeting__form__input"),
+  message = document.querySelector(".greeting__message");
 
 const SHOWING_ON = "showing-on";
 const MENTS = [
@@ -25,10 +25,10 @@ function saveName(name) {
 
 function paintGreeting(name) {
   form.classList.remove(SHOWING_ON);
-  greeting.classList.add(SHOWING_ON);
+  message.classList.add(SHOWING_ON);
   let basement = MENTS[randomNum()];
   let greetMSG = `"${name}${basement}"`;
-  greeting.innerText = greetMSG;
+  message.innerText = greetMSG;
 }
 
 function submitHandler(event) {

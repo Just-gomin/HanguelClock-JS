@@ -1,5 +1,5 @@
-const dateContainer = document.querySelector(".js-date-container"),
-  dateTxt = dateContainer.querySelector(".dateTxt");
+const dateContainer = document.querySelector(".date"),
+  dateTxt = dateContainer.querySelector(".date__txt");
 
 function paintDate() {
   const today = new Date();

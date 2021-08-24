@@ -1,9 +1,9 @@
-const clockContainer = document.querySelector(".js-clock-container"),
+const clockContainer = document.querySelector(".clock"),
   tdMorning = clockContainer.querySelector("#clockMorning"),
   tdMin = clockContainer.querySelector("#Min"),
   tdNoon = clockContainer.querySelector("#clockNoon"),
-  tdsOfHour = clockContainer.querySelectorAll(".clockHours"),
-  tdsOfMinute = clockContainer.querySelectorAll(".clockMinutes");
+  tdsOfHour = clockContainer.querySelectorAll(".clock__txt-hours"),
+  tdsOfMinute = clockContainer.querySelectorAll(".clock__txt-mins");
 
 const TXT_BRIGHTER = "text-brighter";
 
@@ -69,7 +69,7 @@ function paintMinute(minute) {
   } else {
     if (base10Min > 0) {
       clockContainer.querySelector("#Min10").classList.add(TXT_BRIGHTER);
-      if (base10Min > 2) {
+      if (base10Min > 1) {
         clockContainer
           .querySelector(`#Min${base10Min}0`)
           .classList.add(TXT_BRIGHTER);

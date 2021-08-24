@@ -1,9 +1,5 @@
 /* header 세팅 */
 header {
-  display: inline-block;
-}
-
-.js-header {
   display: flex;
   flex-direction: row-reverse;
 }

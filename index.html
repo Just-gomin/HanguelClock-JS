@@ -11,74 +11,72 @@
     <link rel="stylesheet" href="./css/clock.css" />
   </head>
   <body>
-    <header class="js-header">
-      <!-- <input type="button" class="button namechanger" value="이름바꾸기" /> -->
+    <header>
+      <input type="button" class="button namechanger" value="이름바꾸기" />
     </header>
-    <main class="main-container">
-      <!-- <div class="greeting-container">
-        <form class="js-form showing-off">
+    <main>
+      <div class="greeting">
+        <form class="greeting__form showing-off">
           <input
-            class="greeting-input"
+            class="greeting__form__input"
             type="text"
             placeholder="이름이 어떻게 되요? 성은 빼고 적어주세요 =)"
           />
         </form>
-        <h3 class="js-greeting showing-off"></h3>
-      </div> -->
-      <div class="js-date-container">
-        <div class="date-line">
-          <span class="dateTxt"></span>
-        </div>
+        <h3 class="greeting__message showing-off"></h3>
       </div>
-      <div class="js-clock-container">
-        <table class="clockTable">
+      <div class="date">
+        <span class="date__txt"></span>
+      </div>
+      <div class="clock">
+        <table class="clock__table">
           <tr>
-            <td class="clockTxt clockHours" id="Hour1">한</td>
-            <td class="clockTxt clockHours" id="Hour2">두</td>
-            <td class="clockTxt clockHours" id="Hour3">세</td>
-            <td class="clockTxt clockHours" id="Hour4">네</td>
-            <td class="clockTxt clockHours" id="Hour5">다</td>
-            <td class="clockTxt clockHours" id="Hour5set">섯</td>
+            <td class="clock__txt clock__txt-hours" id="Hour1">한</td>
+            <td class="clock__txt clock__txt-hours" id="Hour2">두</td>
+            <td class="clock__txt clock__txt-hours" id="Hour3">세</td>
+            <td class="clock__txt clock__txt-hours" id="Hour4">네</td>
+            <td class="clock__txt clock__txt-hours" id="Hour5">다</td>
+            <td class="clock__txt clock__txt-hours" id="Hour5set">섯</td>
           </tr>
           <tr>
-            <td class="clockTxt clockHours" id="Hour6">여</td>
-            <td class="clockTxt clockHours" id="Hour6set">섯</td>
-            <td class="clockTxt clockHours" id="Hour7">일</td>
-            <td class="clockTxt clockHours" id="Hour7set">곱</td>
-            <td class="clockTxt clockHours" id="Hour8">여</td>
-            <td class="clockTxt clockHours" id="Hour8set">덟</td>
+            <td class="clock__txt clock__txt-hours" id="Hour6">여</td>
+            <td class="clock__txt clock__txt-hours" id="Hour6set">섯</td>
+            <td class="clock__txt clock__txt-hours" id="Hour7">일</td>
+            <td class="clock__txt clock__txt-hours" id="Hour7set">곱</td>
+            <td class="clock__txt clock__txt-hours" id="Hour8">여</td>
+            <td class="clock__txt clock__txt-hours" id="Hour8set">덟</td>
           </tr>
           <tr>
-            <td class="clockTxt clockHours" id="Hour9">아</td>
-            <td class="clockTxt clockHours" id="Hour9set">홉</td>
-            <td class="clockTxt clockHours" id="Hour10">열</td>
-            <td class="clockTxt clockHours" id="Hour11">한</td>
-            <td class="clockTxt clockHours" id="Hour12">두</td>
-            <td class="clockTxt text-brighter" id="Hour">시</td>
+            <td class="clock__txt clock__txt-hours" id="Hour9">아</td>
+            <td class="clock__txt clock__txt-hours" id="Hour9set">홉</td>
+            <td class="clock__txt clock__txt-hours" id="Hour10">열</td>
+            <td class="clock__txt clock__txt-hours" id="Hour11">한</td>
+            <td class="clock__txt clock__txt-hours" id="Hour12">두</td>
+            <td class="clock__txt text-brighter" id="Hour">시</td>
           </tr>
           <tr>
-            <td class="clockTxt clockHalfDay text-brighter">오</td>
-            <td class="clockTxt clockMinutes" id="Min20">이</td>
-            <td class="clockTxt clockMinutes" id="Min30">삼</td>
-            <td class="clockTxt clockMinutes" id="Min40">사</td>
-            <td class="clockTxt clockMinutes" id="Min50">오</td>
-            <td class="clockTxt clockMinutes" id="Min10">십</td>
+            <td class="clock__txt clock__txt-halfDay text-brighter">오</td>
+            <td class="clock__txt clock__txt-mins" id="Min20">이</td>
+            <td class="clock__txt clock__txt-mins" id="Min30">삼</td>
+            <td class="clock__txt clock__txt-mins" id="Min40">사</td>
+            <td class="clock__txt clock__txt-mins" id="Min50">오</td>
+            <td class="clock__txt clock__txt-mins" id="Min10">십</td>
           </tr>
           <tr>
-            <td class="clockTxt clockHalfDay" id="clockMorning">전</td>
-            <td class="clockTxt clockMinutes" id="Min1">일</td>
-            <td class="clockTxt clockMinutes" id="Min2">이</td>
-            <td class="clockTxt clockMinutes" id="Min3">삼</td>
-            <td class="clockTxt clockMinutes" id="Min4">사</td>
-            <td class="clockTxt clockMinutes" id="Min5">오</td>
+            <td class="clock__txt clock__txt-halfDay" id="clockMorning">전</td>
+            <td class="clock__txt clock__txt-mins" id="Min1">일</td>
+            <td class="clock__txt clock__txt-mins" id="Min2">이</td>
+            <td class="clock__txt clock__txt-mins" id="Min3">삼</td>
+            <td class="clock__txt clock__txt-mins" id="Min4">사</td>
+            <td class="clock__txt clock__txt-mins" id="Min5">오</td>
           </tr>
           <tr>
-            <td class="clockTxt clockHalfDay" id="clockNoon">후</td>
-            <td class="clockTxt clockMinutes" id="Min6">육</td>
-            <td class="clockTxt clockMinutes" id="Min7">칠</td>
-            <td class="clockTxt clockMinutes" id="Min8">팔</td>
-            <td class="clockTxt clockMinutes" id="Min9">구</td>
-            <td class="clockTxt" id="Min">분</td>
+            <td class="clock__txt clock__txt-halfDay" id="clockNoon">후</td>
+            <td class="clock__txt clock__txt-mins" id="Min6">육</td>
+            <td class="clock__txt clock__txt-mins" id="Min7">칠</td>
+            <td class="clock__txt clock__txt-mins" id="Min8">팔</td>
+            <td class="clock__txt clock__txt-mins" id="Min9">구</td>
+            <td class="clock__txt" id="Min">분</td>
           </tr>
         </table>
       </div>

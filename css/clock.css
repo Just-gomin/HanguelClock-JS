@@ -1,9 +1,9 @@
 /*  한글 시계 시각 표시 */
-.js-clock-container {
+.clock {
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-.clockTable {
+.clock__table {
   padding: 20px;
   border-spacing: 10px;
   border-radius: 30px;
@@ -11,7 +11,7 @@
   font-family: "Nanum Myeongjo", serif;
 }
 
-.clockTxt {
+.clock__txt {
   padding: 5px;
   opacity: 0.2;
   text-align: center;
@@ -22,6 +22,6 @@
   opacity: 1;
 }
 
-.clockHalfDay {
+.clock__txt-halfDay {
   color: #a5d4dc;
 }
