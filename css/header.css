@@ -4,27 +4,22 @@ header {
   flex-direction: row-reverse;
 }
 
-.button {
-  all: unset;
-  border: 2px solid white;
-  border-radius: 15px;
-  background-color: black;
+#sidebar-openBtn {
   font-size: 20px;
-  font-family: "Nanum Pen Script", cursive;
   padding: 2px;
   margin-top: 5px;
   margin-right: 5px;
   opacity: 0.2;
 }
 
-.button:focus {
+#sidebar-openBtn:focus {
   outline: none;
 }
 
-.button:hover {
+#sidebar-openBtn:hover {
   opacity: 0.8;
 }
 
-.button:active {
+#sidebar-openBtn:active {
   transform: translateY(2px);
 }

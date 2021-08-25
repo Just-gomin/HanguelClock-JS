@@ -2,9 +2,17 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hangeul Clock</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/greeting.css" />
     <link rel="stylesheet" href="./css/date.css" />
@@ -12,9 +20,54 @@
   </head>
   <body>
     <header>
-      <input type="button" class="button namechanger" value="이름바꾸기" />
+      <button class="button showing-on" id="sidebar-openBtn">
+        <i class="fas fa-bars"></i>
+      </button>
     </header>
+
+    <div class="sidebar" id="sidebar">
+      <button class="button showing-off" id="sidebar-closeBtn">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div class="sidebar__menu">
+        <div class="sidebar__menu__title">날짜</div>
+        <div class="sidebar__menu__switch" id="date-switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </div>
+      </div>
+
+      <div class="sidebar__menu">
+        <div class="sidebar__menu__title">응원 문구</div>
+        <div class="sidebar__menu__switch" id="greeting-switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </div>
+      </div>
+
+      <div class="sidebar__menu">
+        <div class="sidebar__menu__title">시계</div>
+        <div class="sidebar__menu__switch" id="greeting-switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </div>
+      </div>
+
+      <div class="sidebar__menu">
+        <div class="sidebar__menu__title">To Do List</div>
+        <div class="sidebar__menu__switch" id="greeting-switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </div>
+      </div>
+    </div>
+
     <main>
+      <div class="date">
+        <span class="date__txt"></span>
+      </div>
+
       <div class="greeting">
         <form class="greeting__form showing-off">
           <input
@@ -25,9 +78,7 @@
         </form>
         <h3 class="greeting__message showing-off"></h3>
       </div>
-      <div class="date">
-        <span class="date__txt"></span>
-      </div>
+
       <div class="clock">
         <table class="clock__table">
           <tr>
@@ -80,10 +131,16 @@
           </tr>
         </table>
       </div>
+
+      <div class="todo-list">
+        <span>To Do List</span>
+      </div>
     </main>
+
     <script src="./js/header.js"></script>
     <script src="./js/greeting.js"></script>
     <script src="./js/date.js"></script>
     <script src="./js//clock.js"></script>
+    <script src="./js/sidebar.js"></script>
   </body>
 </html>

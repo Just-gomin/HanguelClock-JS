@@ -7,7 +7,7 @@ const clockContainer = document.querySelector(".clock"),
 
 const TXT_BRIGHTER = "text-brighter";
 
-function getTime() {
+const getTime = () => {
   const date = new Date();
   const hours = date.getHours();
   const minutes = date.getMinutes();
@@ -22,9 +22,9 @@ function getTime() {
   };
 
   return timeInfo;
-}
+};
 
-function paintHalfDay(halfDay) {
+const paintHalfDay = (halfDay) => {
   if (halfDay === "오전") {
     tdNoon.classList.remove(TXT_BRIGHTER);
     tdMorning.classList.add(TXT_BRIGHTER);
@@ -32,12 +32,15 @@ function paintHalfDay(halfDay) {
     tdNoon.classList.add(TXT_BRIGHTER);
     tdMorning.classList.remove(TXT_BRIGHTER);
   }
-}
+};
 
-function paintHour(hour) {
-  const targetTD = clockContainer.querySelector(`#Hour${hour}`);
+const paintHour = (hour) => {
   tdsOfHour.forEach((td) => td.classList.remove(TXT_BRIGHTER));
-  targetTD.classList.add(TXT_BRIGHTER);
+
+  if (hour > 0) {
+    const targetTD = clockContainer.querySelector(`#Hour${hour}`);
+    targetTD.classList.add(TXT_BRIGHTER);
+  }
 
   if (hour === 0) {
     clockContainer.querySelector("#Hour10").classList.add(TXT_BRIGHTER);
@@ -55,9 +58,9 @@ function paintHour(hour) {
     clockContainer.querySelector("#Hour10").classList.add(TXT_BRIGHTER);
     return;
   }
-}
+};
 
-function paintMinute(minute) {
+const paintMinute = (minute) => {
   const base10Min = Math.floor(minute / 10);
   const base1Min = minute % 10;
 
@@ -83,19 +86,18 @@ function paintMinute(minute) {
     }
     tdMin.classList.add(TXT_BRIGHTER);
   }
-}
+};
 
-function paintclock() {
+const paintclock = () => {
   const timeInfo = getTime();
   paintHalfDay(timeInfo.halfday);
   paintHour(timeInfo.hour);
   paintMinute(timeInfo.minute);
-}
+};
 
-function init() {
+const clockInit = () => {
   paintclock();
   setInterval(paintclock, 1000);
-}
+};
 
-init();
-console.log(typeof tdsOfHour);
+clockInit();

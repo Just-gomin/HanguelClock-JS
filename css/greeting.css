@@ -8,11 +8,12 @@
   padding-left: 40px;
   padding-right: 40px;
   font-family: "Jua", sans-serif;
-  font-size: 24px;
-  width: 80%;
+  font-size: 20px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .greeting__form {
@@ -40,12 +41,4 @@
 
 .greeting__form__input:focus {
   outline: none;
-}
-
-.showing-off {
-  display: none;
-}
-
-.showing-on {
-  display: block;
 }

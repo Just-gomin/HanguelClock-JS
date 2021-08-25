@@ -1,7 +1,7 @@
 const dateContainer = document.querySelector(".date"),
   dateTxt = dateContainer.querySelector(".date__txt");
 
-function paintDate() {
+const paintDate = () => {
   const today = new Date();
 
   const year = today.getFullYear();
@@ -11,10 +11,10 @@ function paintDate() {
   dateTxt.textContent = `${year}년 ${month < 10 ? `0${month}` : month}월 ${
     day < 10 ? `0${day}` : day
   }일`;
-}
+};
 
-function init() {
+const dateInit = () => {
   paintDate();
-}
+};
 
-init();
+dateInit();

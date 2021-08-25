@@ -1,0 +1,50 @@
+.sidebar {
+  display: inline-flexbox;
+  position: fixed;
+  height: 100%;
+  /* width: 25%; */
+  width: 0;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  backdrop-filter: brightness(60%);
+  transition: 0.4s;
+}
+
+#sidebar-closeBtn {
+  position: absolute;
+  right: 0;
+  font-size: 25px;
+  padding: 2px;
+  margin-top: 5px;
+  margin-right: 5px;
+  opacity: 0.5;
+}
+
+#sidebar-closeBtn:focus {
+  outline: none;
+}
+
+#sidebar-closeBtn:hover {
+  opacity: 0.8;
+}
+
+#sidebar-closeBtn:active {
+  transform: translateY(2px);
+}
+
+.sidebar__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 20px 0px 10px;
+  padding: 20px 60px 0px 10px;
+  font-size: 1.3rem;
+  font-family: "Gowun Batang", serif;
+  border-bottom: 1px solid #f1f1f1;
+  opacity: 0.5;
+}
+
+.sidebar__menu:hover {
+  opacity: 1;
+}

@@ -2,6 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Myeongjo:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap");
 
 * {
   margin: 0;
@@ -22,4 +23,17 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+
+.button {
+  all: unset;
+}
+
+.showing-off {
+  display: none;
+}
+
+.showing-on {
+  display: block;
 }
