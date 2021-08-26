@@ -2,7 +2,6 @@
   display: inline-flexbox;
   position: fixed;
   height: 100%;
-  /* width: 25%; */
   width: 0;
   z-index: 1;
   top: 0;
@@ -37,14 +36,70 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 20px 0px 10px;
-  padding: 20px 60px 0px 10px;
+  margin: 20px 20px 0px 0px;
+  padding: 0px 20px 0px 20px;
   font-size: 1.3rem;
   font-family: "Gowun Batang", serif;
   border-bottom: 1px solid #f1f1f1;
-  opacity: 0.5;
+  opacity: 0.6;
+}
+
+.sidebar__menu:nth-child(1) {
+  margin-top: 40px;
 }
 
 .sidebar__menu:hover {
   opacity: 1;
+  background-color: #547794;
+  border-radius: -20px;
+}
+
+.sidebar__menu__switch {
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.switch__label {
+  display: inline-block;
+  width: 42px;
+  height: 16px;
+  background-color: #ccc;
+  border-radius: 16px;
+}
+
+.switch__label .switch__checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch__slider {
+  position: absolute;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch__slider::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch__checkbox:checked + .switch__slider::before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.switch__slider.round {
+  border-radius: 50%;
+}
+
+.switch__slider.round:before {
+  border-radius: 50%;
 }

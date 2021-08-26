@@ -32,54 +32,80 @@
 
       <div class="sidebar__menu">
         <div class="sidebar__menu__title">날짜</div>
-        <div class="sidebar__menu__switch" id="date-switch">
-          <input type="checkbox" />
-          <span class="slider round"></span>
-        </div>
+        <label class="switch__label" id="date-switch" for="date-checkbox">
+          <input
+            type="checkbox"
+            class="switch__checkbox"
+            id="date-checkbox"
+            value="date"
+            checked
+          />
+          <span class="switch__slider round"></span>
+        </label>
       </div>
 
       <div class="sidebar__menu">
-        <div class="sidebar__menu__title">응원 문구</div>
-        <div class="sidebar__menu__switch" id="greeting-switch">
-          <input type="checkbox" />
-          <span class="slider round"></span>
-        </div>
+        <div class="sidebar__menu__title">나를 위한 한 마디</div>
+        <label
+          class="switch__label"
+          id="greeting-switch"
+          for="greeting-checkbox"
+        >
+          <input
+            type="checkbox"
+            class="switch__checkbox"
+            id="greeting-checkbox"
+            value="greeting"
+          />
+          <span class="switch__slider round"></span>
+        </label>
       </div>
 
       <div class="sidebar__menu">
-        <div class="sidebar__menu__title">시계</div>
-        <div class="sidebar__menu__switch" id="greeting-switch">
-          <input type="checkbox" />
-          <span class="slider round"></span>
-        </div>
+        <div class="sidebar__menu__title">한글 시계</div>
+        <label class="switch__label" id="clock-switch" for="clock-checkbox">
+          <input
+            type="checkbox"
+            class="switch__checkbox"
+            id="clock-checkbox"
+            value="clock"
+            checked
+          />
+          <span class="switch__slider round"></span>
+        </label>
       </div>
 
       <div class="sidebar__menu">
         <div class="sidebar__menu__title">To Do List</div>
-        <div class="sidebar__menu__switch" id="greeting-switch">
-          <input type="checkbox" />
-          <span class="slider round"></span>
-        </div>
+        <label class="switch__label" id="todo-switch" for="todo-checkbox">
+          <input
+            type="checkbox"
+            class="switch__checkbox"
+            id="todo-checkbox"
+            value="todo"
+          />
+          <span class="switch__slider round"></span>
+        </label>
       </div>
     </div>
 
     <main>
-      <div class="date">
+      <div class="date" id="date">
         <span class="date__txt"></span>
       </div>
 
-      <div class="greeting">
-        <form class="greeting__form showing-off">
+      <div class="greeting" id="greeting">
+        <form class="greeting__form">
           <input
             class="greeting__form__input"
             type="text"
             placeholder="이름이 어떻게 되요? 성은 빼고 적어주세요 =)"
           />
         </form>
-        <h3 class="greeting__message showing-off"></h3>
+        <h3 class="greeting__message"></h3>
       </div>
 
-      <div class="clock">
+      <div class="clock" id="clock">
         <table class="clock__table">
           <tr>
             <td class="clock__txt clock__txt-hours" id="Hour1">한</td>
@@ -132,7 +158,7 @@
         </table>
       </div>
 
-      <div class="todo-list">
+      <div class="todo" id="todo">
         <span>To Do List</span>
       </div>
     </main>

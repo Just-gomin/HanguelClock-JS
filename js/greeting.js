@@ -3,6 +3,8 @@ const form = document.querySelector(".greeting__form"),
   message = document.querySelector(".greeting__message");
 
 const GREETING_SHOWING_ON = "showing-on";
+const GREETING_SHOWING_OFF = "showing-off";
+
 const MENTS = [
   "아, 너가 있어 아름다운 오늘이야 :)",
   "아, 오늘의 너가 어땠든, 너의 가능성은 사라지지 않아.",
@@ -25,7 +27,11 @@ const saveName = (name) => {
 
 const paintGreeting = (name) => {
   form.classList.remove(GREETING_SHOWING_ON);
+  form.classList.add(GREETING_SHOWING_OFF);
+
+  message.classList.remove(GREETING_SHOWING_OFF);
   message.classList.add(GREETING_SHOWING_ON);
+
   let basement = MENTS[randomNum()];
   let greetMSG = `"${name}${basement}"`;
   message.innerText = greetMSG;
@@ -39,7 +45,12 @@ const submitHandler = (event) => {
 };
 
 const askForName = () => {
+  form.classList.remove(GREETING_SHOWING_OFF);
   form.classList.add(GREETING_SHOWING_ON);
+
+  message.classList.remove(GREETING_SHOWING_ON);
+  message.classList.add(GREETING_SHOWING_OFF);
+
   form.addEventListener("submit", submitHandler);
 };
 
