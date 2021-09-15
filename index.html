@@ -2,88 +2,53 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>Hangeul Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/greeting.css" />
-    <link rel="stylesheet" href="./css/date.css" />
-    <link rel="stylesheet" href="./css/clock.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+    <title>한글시계 | 가장 중요한 순간, 지금</title>
   </head>
   <body>
-    <header>
-      <input type="button" class="button namechanger" value="이름바꾸기" />
-    </header>
     <main>
-      <div class="greeting">
-        <form class="greeting__form showing-off">
-          <input
-            class="greeting__form__input"
-            type="text"
-            placeholder="이름이 어떻게 되요? 성은 빼고 적어주세요 =)"
-          />
-        </form>
-        <h3 class="greeting__message showing-off"></h3>
+      <div class="slider" id="header-slider">
+        <div class="slide">
+          <span>This is Greeting.</span>
+        </div>
+
+        <div class="slide">
+          <span>This is Date.</span>
+        </div>
+
+        <button class="slider__btn slider__prevBtn" type="button">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider__btn slider__nextBtn" type="button">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
-      <div class="date">
-        <span class="date__txt"></span>
-      </div>
-      <div class="clock">
-        <table class="clock__table">
-          <tr>
-            <td class="clock__txt clock__txt-hours" id="Hour1">한</td>
-            <td class="clock__txt clock__txt-hours" id="Hour2">두</td>
-            <td class="clock__txt clock__txt-hours" id="Hour3">세</td>
-            <td class="clock__txt clock__txt-hours" id="Hour4">네</td>
-            <td class="clock__txt clock__txt-hours" id="Hour5">다</td>
-            <td class="clock__txt clock__txt-hours" id="Hour5set">섯</td>
-          </tr>
-          <tr>
-            <td class="clock__txt clock__txt-hours" id="Hour6">여</td>
-            <td class="clock__txt clock__txt-hours" id="Hour6set">섯</td>
-            <td class="clock__txt clock__txt-hours" id="Hour7">일</td>
-            <td class="clock__txt clock__txt-hours" id="Hour7set">곱</td>
-            <td class="clock__txt clock__txt-hours" id="Hour8">여</td>
-            <td class="clock__txt clock__txt-hours" id="Hour8set">덟</td>
-          </tr>
-          <tr>
-            <td class="clock__txt clock__txt-hours" id="Hour9">아</td>
-            <td class="clock__txt clock__txt-hours" id="Hour9set">홉</td>
-            <td class="clock__txt clock__txt-hours" id="Hour10">열</td>
-            <td class="clock__txt clock__txt-hours" id="Hour11">한</td>
-            <td class="clock__txt clock__txt-hours" id="Hour12">두</td>
-            <td class="clock__txt text-brighter" id="Hour">시</td>
-          </tr>
-          <tr>
-            <td class="clock__txt clock__txt-halfDay text-brighter">오</td>
-            <td class="clock__txt clock__txt-mins" id="Min20">이</td>
-            <td class="clock__txt clock__txt-mins" id="Min30">삼</td>
-            <td class="clock__txt clock__txt-mins" id="Min40">사</td>
-            <td class="clock__txt clock__txt-mins" id="Min50">오</td>
-            <td class="clock__txt clock__txt-mins" id="Min10">십</td>
-          </tr>
-          <tr>
-            <td class="clock__txt clock__txt-halfDay" id="clockMorning">전</td>
-            <td class="clock__txt clock__txt-mins" id="Min1">일</td>
-            <td class="clock__txt clock__txt-mins" id="Min2">이</td>
-            <td class="clock__txt clock__txt-mins" id="Min3">삼</td>
-            <td class="clock__txt clock__txt-mins" id="Min4">사</td>
-            <td class="clock__txt clock__txt-mins" id="Min5">오</td>
-          </tr>
-          <tr>
-            <td class="clock__txt clock__txt-halfDay" id="clockNoon">후</td>
-            <td class="clock__txt clock__txt-mins" id="Min6">육</td>
-            <td class="clock__txt clock__txt-mins" id="Min7">칠</td>
-            <td class="clock__txt clock__txt-mins" id="Min8">팔</td>
-            <td class="clock__txt clock__txt-mins" id="Min9">구</td>
-            <td class="clock__txt" id="Min">분</td>
-          </tr>
-        </table>
+
+      <div class="slider" id="body-slider">
+        <div class="slide">
+          <span>This is Hanguel Clock.</span>
+        </div>
+
+        <div class="slide">
+          <span>This is To Do List Block.</span>
+        </div>
+
+        <button class="slider__btn slider__prevBtn" type="button">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider__btn slider__nextBtn" type="button">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
     </main>
-    <script src="./js/header.js"></script>
-    <script src="./js/greeting.js"></script>
-    <script src="./js/date.js"></script>
-    <script src="./js//clock.js"></script>
   </body>
+  <script type="module" src="./js/index.js"></script>
 </html>
