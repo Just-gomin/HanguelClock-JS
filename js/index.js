@@ -1,5 +1,6 @@
-import { sliderInit } from "./slider.js";
-import { dateInit } from "./date.js";
+import { getLoginUser } from "./utils/localDB.js";
+import { sliderInit } from "./components/slider.js";
+import { dateInit } from "./components/date.js";
 
 sliderInit();
 dateInit();
