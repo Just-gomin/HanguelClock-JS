@@ -14,6 +14,54 @@
     <title>한글시계 | 가장 중요한 순간, 지금</title>
   </head>
   <body>
+    <div class="auth">
+      <div class="auth__block login">
+        <div class="auth__title login__title">로그인</div>
+        <form class="auth__form login__form">
+          <label for="login-id">계정 이름</label>
+          <input type="text" class="auth__input" id="login-id" />
+          <label for="login-pass">비밀번호</label>
+          <input type="text" class="auth__input" id="login-pass" />
+          <input
+            type="button"
+            class="auth__button"
+            id="login-btn"
+            value="로그인"
+          />
+        </form>
+        <div class="login__option opt__signup">회원가입</div>
+        <div class="login__option opt__not-login">로그인 없이 사용하기</div>
+      </div>
+
+      <div class="auth__block signup">
+        <div class="auth__title signup__title">회원가입</div>
+        <form class="auth__form signup__form">
+          <div class="signup__form__username">
+            <label for="signup-username-first">성</label>
+            <input type="text" class="auth__input" id="signup-username-first" />
+            <label for="signup-username-second">이름</label>
+            <input
+              type="text"
+              class="auth__input"
+              id="signup-username-second"
+            />
+          </div>
+          <label for="signup-id">계정 이름</label>
+          <input type="text" class="auth__input" id="signup-id" />
+          <label for="signup-pass">비밀번호</label>
+          <input type="text" class="auth__input" id="signup-pass" />
+          <label for="signup-pass2">비밀번호 재입력</label>
+          <input type="text" class="auth__input" id="signup-pass2" />
+          <input
+            type="button"
+            class="auth__button"
+            id="signup-btn"
+            value="회원가입 완료"
+          />
+        </form>
+      </div>
+    </div>
+
     <main>
       <div class="slider" id="header-slider">
         <div class="slide">
@@ -23,7 +71,9 @@
         </div>
 
         <div class="slide">
-          <span>This is Greeting.</span>
+          <div class="greeting">
+            <div class="greeting__message">This is greeting message.</div>
+          </div>
         </div>
 
         <button class="slider__btn slider__prevBtn" type="button">
