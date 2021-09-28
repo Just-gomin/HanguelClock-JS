@@ -10,6 +10,7 @@ import { getLoginUser } from "./utils/localDB.js";
 import { sliderInit } from "./components/slider.js";
 import { dateInit } from "./components/date.js";
 import { authInit } from "./components/auth.js";
+import { clockInit } from "./components/clock.js";
 
 let id = getLoginUser();
 
@@ -20,3 +21,4 @@ if (id === null) {
 sliderInit();
 dateInit();
 authInit();
+clockInit();

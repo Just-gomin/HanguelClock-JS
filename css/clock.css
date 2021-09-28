@@ -1,0 +1,11 @@
+.clock__txt {
+  opacity: 0.3;
+}
+
+.clock__txt-on {
+  opacity: 1;
+}
+
+.clock__txt-halfDay {
+  color: rgb(165, 212, 220);
+}
